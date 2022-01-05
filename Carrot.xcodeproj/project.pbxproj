@@ -9,21 +9,45 @@
 /* Begin PBXBuildFile section */
 		A082F28E2784382600A24DBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F28D2784382600A24DBF /* AppDelegate.swift */; };
 		A082F2902784382600A24DBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F28F2784382600A24DBF /* SceneDelegate.swift */; };
-		A082F2922784382600A24DBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2912784382600A24DBF /* ViewController.swift */; };
-		A082F2952784382600A24DBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A082F2932784382600A24DBF /* Main.storyboard */; };
+		A082F2922784382600A24DBF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2912784382600A24DBF /* MainViewController.swift */; };
 		A082F2972784382700A24DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A082F2962784382700A24DBF /* Assets.xcassets */; };
 		A082F29A2784382700A24DBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A082F2982784382700A24DBF /* LaunchScreen.storyboard */; };
+		A082F2A3278438A200A24DBF /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A082F2A2278438A200A24DBF /* RxCocoa */; };
+		A082F2A5278438A200A24DBF /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A082F2A4278438A200A24DBF /* RxRelay */; };
+		A082F2A7278438A200A24DBF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A082F2A6278438A200A24DBF /* RxSwift */; };
+		A082F2AA278438B500A24DBF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A082F2A9278438B500A24DBF /* SnapKit */; };
+		A082F2AC27843C5C00A24DBF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2AB27843C5C00A24DBF /* MainViewModel.swift */; };
+		A082F2AF2784412300A24DBF /* TitleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2AE2784412300A24DBF /* TitleTextFieldCell.swift */; };
+		A082F2B12784413C00A24DBF /* TitleTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2B02784413C00A24DBF /* TitleTextFieldCellViewModel.swift */; };
+		A082F2B32785562D00A24DBF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2B22785562C00A24DBF /* Category.swift */; };
+		A082F2B52785564C00A24DBF /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2B42785564C00A24DBF /* CategoryViewModel.swift */; };
+		A082F2B7278558D400A24DBF /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2B6278558D400A24DBF /* CategoryListViewController.swift */; };
+		A082F2B9278561FC00A24DBF /* PriceTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2B8278561FC00A24DBF /* PriceTextFieldCellViewModel.swift */; };
+		A082F2BB2785650100A24DBF /* PriceTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2BA2785650100A24DBF /* PriceTextFieldCell.swift */; };
+		A082F2BD2785693C00A24DBF /* DetailFormCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2BC2785693C00A24DBF /* DetailFormCellViewModel.swift */; };
+		A082F2BF2785697D00A24DBF /* DetailFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2BE2785697D00A24DBF /* DetailFormCell.swift */; };
+		A082F2C12785731F00A24DBF /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F2C02785731F00A24DBF /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A082F28A2784382600A24DBF /* Carrot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carrot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A082F28D2784382600A24DBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A082F28F2784382600A24DBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A082F2912784382600A24DBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A082F2942784382600A24DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A082F2912784382600A24DBF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A082F2962784382700A24DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A082F2992784382700A24DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A082F29B2784382700A24DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A082F2AB27843C5C00A24DBF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A082F2AE2784412300A24DBF /* TitleTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCell.swift; sourceTree = "<group>"; };
+		A082F2B02784413C00A24DBF /* TitleTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		A082F2B22785562C00A24DBF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A082F2B42785564C00A24DBF /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		A082F2B6278558D400A24DBF /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		A082F2B8278561FC00A24DBF /* PriceTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		A082F2BA2785650100A24DBF /* PriceTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCell.swift; sourceTree = "<group>"; };
+		A082F2BC2785693C00A24DBF /* DetailFormCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFormCellViewModel.swift; sourceTree = "<group>"; };
+		A082F2BE2785697D00A24DBF /* DetailFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFormCell.swift; sourceTree = "<group>"; };
+		A082F2C02785731F00A24DBF /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A082F2A7278438A200A24DBF /* RxSwift in Frameworks */,
+				A082F2AA278438B500A24DBF /* SnapKit in Frameworks */,
+				A082F2A5278438A200A24DBF /* RxRelay in Frameworks */,
+				A082F2A3278438A200A24DBF /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +86,31 @@
 			children = (
 				A082F28D2784382600A24DBF /* AppDelegate.swift */,
 				A082F28F2784382600A24DBF /* SceneDelegate.swift */,
-				A082F2912784382600A24DBF /* ViewController.swift */,
-				A082F2932784382600A24DBF /* Main.storyboard */,
+				A082F2AD2784410900A24DBF /* Scene */,
 				A082F2962784382700A24DBF /* Assets.xcassets */,
 				A082F2982784382700A24DBF /* LaunchScreen.storyboard */,
 				A082F29B2784382700A24DBF /* Info.plist */,
 			);
 			path = Carrot;
+			sourceTree = "<group>";
+		};
+		A082F2AD2784410900A24DBF /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A082F2912784382600A24DBF /* MainViewController.swift */,
+				A082F2AB27843C5C00A24DBF /* MainViewModel.swift */,
+				A082F2C02785731F00A24DBF /* MainModel.swift */,
+				A082F2AE2784412300A24DBF /* TitleTextFieldCell.swift */,
+				A082F2B02784413C00A24DBF /* TitleTextFieldCellViewModel.swift */,
+				A082F2B6278558D400A24DBF /* CategoryListViewController.swift */,
+				A082F2B42785564C00A24DBF /* CategoryViewModel.swift */,
+				A082F2B22785562C00A24DBF /* Category.swift */,
+				A082F2BA2785650100A24DBF /* PriceTextFieldCell.swift */,
+				A082F2B8278561FC00A24DBF /* PriceTextFieldCellViewModel.swift */,
+				A082F2BE2785697D00A24DBF /* DetailFormCell.swift */,
+				A082F2BC2785693C00A24DBF /* DetailFormCellViewModel.swift */,
+			);
+			name = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,12 @@
 			dependencies = (
 			);
 			name = Carrot;
+			packageProductDependencies = (
+				A082F2A2278438A200A24DBF /* RxCocoa */,
+				A082F2A4278438A200A24DBF /* RxRelay */,
+				A082F2A6278438A200A24DBF /* RxSwift */,
+				A082F2A9278438B500A24DBF /* SnapKit */,
+			);
 			productName = Carrot;
 			productReference = A082F28A2784382600A24DBF /* Carrot.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +163,10 @@
 				Base,
 			);
 			mainGroup = A082F2812784382600A24DBF;
+			packageReferences = (
+				A082F2A1278438A200A24DBF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				A082F2A8278438B500A24DBF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = A082F28B2784382600A24DBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +183,6 @@
 			files = (
 				A082F29A2784382700A24DBF /* LaunchScreen.storyboard in Resources */,
 				A082F2972784382700A24DBF /* Assets.xcassets in Resources */,
-				A082F2952784382600A24DBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +193,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A082F2922784382600A24DBF /* ViewController.swift in Sources */,
+				A082F2922784382600A24DBF /* MainViewController.swift in Sources */,
+				A082F2B12784413C00A24DBF /* TitleTextFieldCellViewModel.swift in Sources */,
+				A082F2B9278561FC00A24DBF /* PriceTextFieldCellViewModel.swift in Sources */,
+				A082F2BF2785697D00A24DBF /* DetailFormCell.swift in Sources */,
+				A082F2B7278558D400A24DBF /* CategoryListViewController.swift in Sources */,
 				A082F28E2784382600A24DBF /* AppDelegate.swift in Sources */,
 				A082F2902784382600A24DBF /* SceneDelegate.swift in Sources */,
+				A082F2BB2785650100A24DBF /* PriceTextFieldCell.swift in Sources */,
+				A082F2B52785564C00A24DBF /* CategoryViewModel.swift in Sources */,
+				A082F2AF2784412300A24DBF /* TitleTextFieldCell.swift in Sources */,
+				A082F2C12785731F00A24DBF /* MainModel.swift in Sources */,
+				A082F2AC27843C5C00A24DBF /* MainViewModel.swift in Sources */,
+				A082F2B32785562D00A24DBF /* Category.swift in Sources */,
+				A082F2BD2785693C00A24DBF /* DetailFormCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A082F2932784382600A24DBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A082F2942784382600A24DBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A082F2982784382700A24DBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +352,6 @@
 				INFOPLIST_FILE = Carrot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +379,6 @@
 				INFOPLIST_FILE = Carrot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +416,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A082F2A1278438A200A24DBF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		A082F2A8278438B500A24DBF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A082F2A2278438A200A24DBF /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A082F2A1278438A200A24DBF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A082F2A4278438A200A24DBF /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A082F2A1278438A200A24DBF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		A082F2A6278438A200A24DBF /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A082F2A1278438A200A24DBF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		A082F2A9278438B500A24DBF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A082F2A8278438B500A24DBF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A082F2822784382600A24DBF /* Project object */;
 }
