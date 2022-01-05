@@ -24,7 +24,7 @@ class CategoryListViewController: UIViewController {
     func bind(_ viewModel: CategoryViewModel) {
         viewModel.cellData
             .drive(tableView.rx.items) { tv, row, data in
-                let cell = tv.dequeueReusableCell(withIdentifier: "CategoryListCell", for: IndexPath(row: row, section: 0))
+                let cell = tv.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self), for: IndexPath(row: row, section: 0))
                 
                 cell.textLabel?.text = data.name
                 return cell
@@ -46,7 +46,7 @@ class CategoryListViewController: UIViewController {
     private func configure() {
         view.backgroundColor = .systemBackground
         tableView.backgroundColor = .systemBackground
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CategoryListCell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
         tableView.separatorStyle = .singleLine
         tableView.tableFooterView = UIView()
     }

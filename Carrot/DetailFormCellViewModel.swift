@@ -11,5 +11,4 @@ import RxCocoa
 struct DetailFormCellViewModel {
     //View -> ViewModel
     let contentValue = PublishRelay<String?>()
-    
 }

@@ -36,8 +36,8 @@ class TitleTextFieldCell: UITableViewCell {
     }
     
     private func layout() {
-//        contentView.addSubview(titleInputField)
-        addSubview(titleInputField)
+        contentView.addSubview(titleInputField)
+//        addSubview(titleInputField)
         titleInputField.snp.makeConstraints {
             $0.edges.equalToSuperview().inset(20)
         }

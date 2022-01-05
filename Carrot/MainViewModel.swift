@@ -7,7 +7,6 @@
 
 import RxSwift
 import RxCocoa
-import Dispatch
 
 struct MainViewModel {
     let titleTextFieldCellViewModel = TitleTextFieldCellViewModel()
@@ -38,7 +37,7 @@ struct MainViewModel {
             .combineLatest(title, category, price, detail) {
                 [$0, $1, $2, $3]
             }
-            .asDriver(onErrorJustReturn: [])
+            .asDriver(onErrorDriveWith: .empty())
         
         let titleMessage = titleTextFieldCellViewModel
             .titleText
@@ -58,13 +57,13 @@ struct MainViewModel {
             .startWith(true)
             .map { $0 ? ["- 내용을 입력해주세요."] : [] }
         
-        let errorMessage = Observable
+        let errorMessages = Observable
             .combineLatest(titleMessage, categoryMessage, detailMessage) {
-                [$0 + $1 + $2]
+                $0 + $1 + $2
             }
         
         presentAlert = tapSubmitButton
-            .withLatestFrom(errorMessage)
+            .withLatestFrom(errorMessages)
             .map(model.setAlert)
             .asSignal(onErrorSignalWith: .empty())
         

@@ -8,9 +8,9 @@
 import Foundation
 
 struct MainModel {
-    func setAlert(errorMessage: [String]) -> Alert {
-        let title = errorMessage.isEmpty ? "성공" : "실패"
-        let message = errorMessage.isEmpty ? nil : errorMessage.joined(separator: "\n")
+    func setAlert(errorMessages: [String]) -> (title: String, message: String?) {
+        let title = errorMessages.isEmpty ? "성공" : "실패"
+        let message = errorMessages.isEmpty ? nil : errorMessages.joined(separator: "\n")
         return (title: title, message: message)
     }
 }

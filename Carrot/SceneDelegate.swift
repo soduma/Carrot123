@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         let rootViewController = MainViewController()
-//        rootViewController.bind(rootViewModel)
+        rootViewController.bind(rootViewModel)
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.backgroundColor = .systemBackground
         window?.makeKeyAndVisible()
